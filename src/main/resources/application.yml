@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/carolmariel15/config-data
+          search-paths: /
+  application:
+    name: config-server
